@@ -1,30 +1,32 @@
 # pio
 
-## Project setup
+Manage a small JSON database with a small scripting language.
+
+## Get started
+
+### Open Pio Online Editor
+
+You can find it here: [https://allnulled.github.io/pio](https://allnulled.github.io/pio)
+
+### Test the syntax
+
+Every command is made with the following syntax:
+
 ```
-npm install
+{operation}{store}[:{item}]?[/{property}:{value}]*
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The available operations are:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- `+`: adds an item to the store.
+- `-`: removes an items from the store.
+- `!`: edits an items from the store.
+- `?`: selects an item [or some of them] from the store.
+- `:`: execute some command from the store.
 
-### Run your tests
-```
-npm run test
-```
+To create a store, simply add a new item in it.
 
-### Lints and fixes files
-```
-npm run lint
-```
+To run the commands, you can click the 'play' button of the editor, or hit [CONTROL] + [ENTER] in your keyboard.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"# pio" 
+
+
